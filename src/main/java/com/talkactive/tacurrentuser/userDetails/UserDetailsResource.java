@@ -12,7 +12,6 @@ import java.security.Principal;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin("*")
 public class UserDetailsResource {
 
     private UserDetailsService userDetailsService;
