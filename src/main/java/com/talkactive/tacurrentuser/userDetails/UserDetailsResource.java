@@ -18,11 +18,6 @@ public class UserDetailsResource {
         this.userDetailsService = userDetailsService;
     }
 
-    @GetMapping("/")
-    public String home() {
-        return "Hello from User Details Service";
-    }
-
     @GetMapping("/user-details")
     public ResponseEntity<UserDetails> getUserDetails(Principal principal) {
         UserDetails response = userDetailsService.getUserDetails(principal);
