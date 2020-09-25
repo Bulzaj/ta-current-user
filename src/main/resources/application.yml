@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: ta-current-user
+server:
+  port: 8000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:
+        http://localhost:5000/eureka/
+
+keycloak:
+  realm: talk-active
+  auth-server-url: http://localhost:8080/auth
+  ssl-required: external
+  resource: ta-current-user
+  use-resource-role-mappings: true
+  autodetect-bearer-only: true
+  bearer-only: true
+  principal-attribute: preferred_username
+
