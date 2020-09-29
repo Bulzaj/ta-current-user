@@ -12,7 +12,7 @@ eureka:
 
 keycloak:
   realm: talk-active
-  auth-server-url: http://ta-user-management:8080/auth
+  auth-server-url: http://localhost:8080/auth
   ssl-required: external
   resource: ta-current-user
   use-resource-role-mappings: true
